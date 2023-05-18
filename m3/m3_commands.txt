@@ -2,7 +2,7 @@
 aws configure --profile deep-dive
 
 # Linux or MacOS
-export AWS_PROFILE=deep-dive
+export AWS_PROFILE=dev
 
 # Windows
 $env:AWS_PROFILE="deep-dive"

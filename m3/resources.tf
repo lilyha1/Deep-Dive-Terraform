@@ -6,7 +6,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~>3.0"
+      version = "~>4.0"
     }
   }
 }
@@ -16,7 +16,7 @@ terraform {
 ##################################################################################
 
 provider "aws" {
-  profile = "deep-dive"
+  profile = "dev"
   region  = var.region
 }
 
@@ -33,7 +33,7 @@ data "aws_availability_zones" "available" {}
 # NETWORKING #
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "~>2.0"
+  version = "~>4.0"
 
   name = "globo-primary"
 
